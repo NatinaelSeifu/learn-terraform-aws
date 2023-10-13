@@ -6,6 +6,7 @@ Sometimes `.tfstate` file might deleted unforunately. even though its hard to re
 
 - second option might be adding an `import.tf` file and use this syntax.
 
+
 ```import {
     to = aws_s3_bucket.bucket
     id = "bucket-name"
