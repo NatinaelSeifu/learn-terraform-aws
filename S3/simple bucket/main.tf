@@ -20,10 +20,10 @@ provider "aws" {
        }
 
   resource "aws_s3_bucket" "myterr-s3-bucket-00" {
-  bucket = "myterr-s3-bucket-01"
+  bucket = var.bucket_name
 
    tags = {
     
-   name = var.terrform_bucket
+   name = var.bucket_tag
   }
 }
